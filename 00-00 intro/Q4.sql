@@ -1,0 +1,10 @@
+SELECT * FROM EMPLOYEE WHERE
+
+NOT CITY = 'Matrouh' AND
+NOT CITY= 'Alex' AND
+NOT CITY= 'Alex'
+
+
+SELECT * FROM EMPLOYEE WHERE
+
+CITY NOT IN  ('Matrouh' , 'Giza' ,'Alex )
