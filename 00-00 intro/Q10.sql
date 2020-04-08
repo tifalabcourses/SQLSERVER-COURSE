@@ -1,0 +1,1 @@
+SELECT * FROM employee WHERE AGE = (              SELECT MIN(AGE) FROM EMPLOYEE  )
