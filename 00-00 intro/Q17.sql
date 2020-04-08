@@ -1,0 +1,2 @@
+-- employee age between 30 and 35
+SELECT * FROM EMPLOYEE WHERE AGE BETWEEN 30 AND 35
