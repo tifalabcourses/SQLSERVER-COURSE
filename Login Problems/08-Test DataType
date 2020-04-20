@@ -1,0 +1,238 @@
+ ----------------- BIT ------------------- 
+  -- 0    1 
+ DECLARE @test_BIT_Var           BIT ;
+
+  SET @test_BIT_Var  = 012 ;
+  SELECT  @test_BIT_Var   AS VALUE ;
+  SELECT   LEN(@test_BIT_Var ) AS LENGHT
+
+------------------ INT  -----------------------------
+  -- -2,147,483,648         2,147,483,647
+  
+  DECLARE @test_INT_Var          INT ;
+
+  SET @test_INT_Var  = 21474836471;
+  SELECT  @test_INT_Var   AS VALUE ;
+  SELECT   LEN(@test_INT_Var ) AS LENGHT
+
+------------------ TINYINT  -----------------------------
+--    0      255
+
+DECLARE @test_TINYINT_Var      TINYINT ;
+
+  SET @test_TINYINT_Var  = 256;
+  SELECT  @test_TINYINT_Var   AS VALUE ;
+  SELECT   LEN(@test_TINYINT_Var ) AS LENGHT
+
+------------------ BIGINT  -----------------------------
+--    --9,223,372,036,854,775,808      9,223,372,036,854,775,807
+DECLARE @test_BIGINT_Var       BIGINT ;
+  
+  SET @test_BIGINT_Var  = 9223372036854775807;
+  SELECT  @test_BIGINT_Var   AS VALUE ;
+  SELECT   LEN(@test_BIGINT_Var ) AS LENGHT
+
+
+------------------ DECIMAL  -----------------------------
+--    ---10^38 +1      10^38 –1
+
+DECLARE @test_DECIMAL_Var      DECIMAL ;
+  SET @test_DECIMAL_Var  = 9223372036854775808;
+  SELECT  @test_DECIMAL_Var   AS VALUE ;
+  SELECT   LEN(@test_DECIMAL_Var ) AS LENGHT
+
+------------------ NUMERIC  -----------------------------
+---10^38 +1   10^38 –1
+
+DECLARE @test_NUMERIC_Var      NUMERIC ;
+  SET @test_NUMERIC_Var  = 9223372036854775808;
+  SELECT  @test_NUMERIC_Var   AS VALUE ;
+  SELECT   LEN(@test_NUMERIC_Var ) AS LENGHT
+
+  ------------------ SMALLINT  -----------------------------
+DECLARE @test_SMALLINT_Var     SMALLINT ;
+  SET @test_SMALLINT_Var  = 9223372036854775808;
+  SELECT  @test_SMALLINT_Var   AS VALUE ;
+  SELECT   LEN(@test_SMALLINT_Var ) AS LENGHT
+------------------ MONEY  -----------------------------
+---922,337,203,685,477.5808   +922,337,203,685,477.5807
+                               922,337,203,685,477,5807
+DECLARE @test_MONEY_Var        MONEY ;
+  SET @test_MONEY_Var  = 922337203685477.5807;
+  SELECT  @test_MONEY_Var   AS VALUE ;
+  SELECT   LEN(@test_MONEY_Var ) AS LENGHT
+
+------------------ SMALLMONEY  -----------------------------
+DECLARE @test_SMALLMONEY_Var  SMALLMONEY ;
+  SET @test_SMALLMONEY_Var  = 9223372036854775808;
+  SELECT  @test_SMALLMONEY_Var   AS VALUE ;
+  SELECT   LEN(@test_SMALLMONEY_Var ) AS LENGHT
+
+
+
+
+------------------ FLOAT  -----------------------------
+DECLARE @test_FLOAT_Var  FLOAT ;
+  SET @test_FLOAT_Var  = 9223372036854775808;
+  SELECT  @test_FLOAT_Var   AS VALUE ;
+  SELECT   LEN(@test_FLOAT_Var ) AS LENGHT
+
+
+------------------ REAL  -----------------------------
+DECLARE @test_REAL_Var  REAL ;
+  SET @test_REAL_Var  = 9223372036854775808;
+  SELECT  @test_REAL_Var   AS VALUE ;
+  SELECT   LEN(@test_REAL_Var ) AS LENGHT
+
+
+
+----------------STRING ------------------UNICODE STRING ----------------
+--CHAR                                  --nCHAR    
+--TEXT                                  --nTEXT
+--VARCHAR                               --nVARCHAR
+
+------------------ CHAR  -----------------------------
+DECLARE @test_CHAR_Var  CHAR ;
+  SET @test_CHAR_Var  = 'C';
+  SELECT  @test_CHAR_Var   AS VALUE ;
+  SELECT   LEN(@test_CHAR_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_CHAR_Var)	AS DATALENGHT
+
+ ------------------ VARCHAR  -----------------------------
+DECLARE @test_VARCHAR_Var VARCHAR(10) ;
+  SET @test_VARCHAR_Var  = 'Mostafa';
+  SELECT  @test_VARCHAR_Var   AS VALUE ;
+  SELECT   LEN(@test_VARCHAR_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_VARCHAR_Var)	AS DATALENGHT
+   ------------------ TEXT  ---------not used with variable------------
+DECLARE @test_TEXT_Var TEXT ;
+  SET @test_TEXT_Var  = 'Mostafa';
+  SELECT  @test_TEXT_Var   AS VALUE ;
+  SELECT   LEN(@test_TEXT_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_TEXT_Var)	AS DATALENGHT
+
+------------------ NCHAR  -----------------------------
+DECLARE @test_NCHAR_Var  NCHAR ;
+  SET @test_NCHAR_Var  = 'C';
+  SELECT  @test_NCHAR_Var   AS VALUE ;
+  SELECT   LEN(@test_NCHAR_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_NCHAR_Var)	AS DATALENGHT
+
+ ------------------ NVARCHAR  -----------------------------
+DECLARE @test_NVARCHAR_Var NVARCHAR(10) ;
+  SET @test_NVARCHAR_Var  = 'Mostafa';
+  SELECT  @test_NVARCHAR_Var   AS VALUE ;
+  SELECT   LEN(@test_NVARCHAR_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_NVARCHAR_Var)	AS DATALENGHT
+  
+   ------------------ NTEXT  ---------not used with variable------------
+DECLARE @test_NTEXT_Var NTEXT ;
+  SET @test_NTEXT_Var  = 'Mostafa';
+  SELECT  @test_NTEXT_Var   AS VALUE ;
+  SELECT   LEN(@test_NTEXT_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_NTEXT_Var)	AS DATALENGHT
+
+
+
+
+
+
+---------------DATE TIME -------------------------------------
+--DATE
+--DATETIME
+--DATETIME2
+--DATETIMEOFFSET
+--SMALLDATETIME
+--TIME  
+
+
+
+---------------BINARY STRING -------------------------------------
+--BINARY
+--IMAGE
+--VARBINARY
+ 
+ 
+---------------OTHER TYPE -------------------------------------
+--CURSOR
+--HYAIRCHYID
+--SQL_VARIANT 
+--SPACIAL GEOMERTY TYPE
+--TABLE
+--ROWVERSION
+--UNIQUEIDENTIFIER
+--XML
+--Spacial Geomerty Type
+
+
+
+---------------EXACT NUMERIC -------------------------------------
+--BIT
+--TINYINT
+--SMALLINT
+--INT
+--BIGINT
+--SMALLMONEY
+--MONEY
+--DECIMAL
+--NUMERIC
+
+---------------APPROXIMATE NUMERIC-----------------------------
+FLOAT
+REAL
+
+------------------STRING CHAR AND UNICODE STRING CHAR------------
+
+ CHAR
+NCHAR
+
+ VARCHAR
+NVARCHAR
+
+ TEXT 
+NTEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ------------------ NTEXT  ---------not used with variable------------
+DECLARE @test_NTEXT_Var NTEXT ;
+  SET @test_NTEXT_Var  = 'Mostafa';
+  SELECT  @test_NTEXT_Var   AS VALUE ;
+  SELECT   LEN(@test_NTEXT_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_NTEXT_Var)	AS DATALENGHT
+
+
+
+
+
+
+ GO
+
+  DECLARE @test_VARCHAR_Var VARCHAR(10) ;
+  SET @test_VARCHAR_Var  = 'Mostafa';
+  SELECT  @test_VARCHAR_Var   AS VALUE ;
+  SELECT   LEN(@test_VARCHAR_Var ) AS LENGHT
+  SELECT   DATALENGTH(@test_VARCHAR_Var)	AS DATALENGHT
+
+  GO
+select * 
+from sys.dm_db_session_space_usage 
+where session_id = @@SPID
+
+
+ DECLARE @testVar  INT ;
+ SET @testVar = 554 ;
+
+ SELECT  @testVar  AS VALUE ;
+ SELECT   LEN(@testVar) AS LENGHT

@@ -1,0 +1,23 @@
+DECLARE @MyVAR  DECIMAL(5,2) ;
+
+SET @MyVAR = 500.021515 ;
+
+SELECT @MyVAR ;
+--The	real size of the data in bytes is returned by the DATALENGTH()
+
+DECLARE @MyVAR2  DECIMAL(38,19) ;
+
+SET @MyVAR2 = 12345671111111111 ;
+
+SELECT @MyVAR2 ;
+SELECT DATALENGTH(@MyVAR2) AS LenghtinBYTE
+
+DECLARE		@string	  VARCHAR(50)	=	'hello	earth',	
+			@nstring  NVARCHAR(50)	=	'hello	earth'; 
+			
+			
+			SELECT LEN (@string)	as	'عدد الحروف',
+			       DATALENGTH   (@string)	as	'المساحة بالبايت',	
+				  
+				   LEN(@nstring)	as	'عدد الحروف',
+				   DATALENGTH  (@nstring)	as	'المساحة بالبايت' ;

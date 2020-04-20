@@ -1,0 +1,7 @@
+CREATE TABLE MoneyTest (
+    Mon1 money, Mon2 AS Mon1*Mon1, Mon3 AS Mon1*Mon1*Mon1,
+    Dec1 decimal(19,4), Dec2 AS Dec1*Dec1, Dec3 AS Dec1*Dec1*Dec1,
+    MonDec AS Mon1*Dec1, DecMon AS Dec1*Mon1);
+GO
+EXEC sp_help MoneyTest;
+GO

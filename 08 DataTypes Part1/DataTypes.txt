@@ -1,0 +1,11 @@
+DROP TABLE PERSON ;
+
+CREATE TABLE PERSON (
+--INT	-- -2,147,483,648          2,147,483,647
+ID INT IDENTITY(1,1),
+attended  BIT,   -- 0   1   NULL ,
+
+AGE   INT  ,
+
+NATIONALID BIGINT  check(NationalID between 0 AND 99999999999999), 
+)
