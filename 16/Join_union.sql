@@ -29,4 +29,15 @@ RIGHT JOIN Shoes ON Customer.size = Shoes.ShoesSize
 
 SELECT * FROM  Customer 
 FULL JOIN Shoes ON Customer.size = Shoes.ShoesSize
---Where Customer.name = 'Saad'
+--Where Customer.name = 'Saad''
+
+
+
+  SELECT TEAMMENUS.MenuName  AS 'اسم الفريق',
+         LEAGUEMENUS.MenuName AS 'اسم الدوري'
+
+	FROM MENUS AS TEAMMENUS
+	INNER JOIN MENUS 	 AS LEAGUEMENUS
+	ON TEAMMENUS.parent_id = LEAGUEMENUS.id
+
+ 
